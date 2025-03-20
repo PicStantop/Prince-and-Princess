@@ -12,25 +12,42 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Prince & Princess Clinic</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand text-white fw-bold" href="#">Prince & Princess Clinic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="team.html">Leadership Team</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li> -->
-                    <!-- <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Maternity Care</a></li>
+                            <li><a class="dropdown-item" href="#">Orthopedic Care</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="team.html">Leadership Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
 
     <!-- Hero Section -->
     <header>
@@ -38,7 +55,7 @@
             <div class="carousel-inner">
         
                 <!-- Slide 1 -->
-                <div class="carousel-item active" style="background: linear-gradient(to right, #ff6b6b, #ffffff);">
+                <div class="carousel-item active" style="background: linear-gradient(to right, #FF9A8B, #FF6A88, #FF99AC);">
                     <div class="container d-flex align-items-center carousel-content">
                         <div class="row">
                             <div class="col-md-6 text-white d-flex align-items-center">
@@ -56,7 +73,7 @@
                 </div>
         
                 <!-- Slide 2 -->
-                <div class="carousel-item" style="background: linear-gradient(to right, #6b8cff, #ffffff);">
+                <div class="carousel-item" style="background: linear-gradient(to right, #1d21ee, #ffffff);">
                     <div class="container d-flex align-items-center carousel-content">
                         <div class="row">
                             <div class="col-md-6 text-white d-flex align-items-center">
@@ -86,35 +103,105 @@
             </button>
         </div>
     </header>
+    <div class="container text-center py-4">
+        <h1>WHO WE ARE</h1>
+        <div class="row py-5">
+            <div class="col-md-6 text-start">
+                <h1>Maruti Nursing Home - Best Maternity Hospital in Mulund Welcome to Maruti Nursing Home (MNH)</h1>
+                <p>
+                    <br>
+        
+        Proudly rated as “Best-in-Class” among nursing homes in Mumbai. Since our establishment in 2009, we have been dedicated to providing top-notch healthcare services with a personal touch.
+                    <br>
+        Our state-of-the-art facilities include the latest in Digital X-rays (DR), advanced Sonography, and Hi-Tech Operation Rooms. To better accommodate our growing number of outpatients, we have expanded to include new consulting rooms at Maruti NX Polyclinic (MNX), conveniently located close to the hospital.
+        In an era where corporate medical care often lacks personal attention, MNH stands out by delivering compassionate, individualized care. We uphold the trust and value that nursing homes bring to healthcare, ensuring each patient feels cared for and respected.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/OIP (6).jpeg" class="img-fluid rounded shadow" alt="About">
+            </div>
 
+
+        </div>
+        
+
+        
+        <a href="about.html" class="btn btn-primary btn-sm custom-btn">READ MORE</a>
+    </div>
     <!-- Services Overview -->
-    <section class="container py-5 text-center">
-        <h2>Our Services</h2>
-        <div class="row w-100">
-            <div class="col-md-4 services ">
-                <img src="images/service1.jpeg" class=" img-fluid rounded" alt="Maternity Care">
-                <h4>Maternity Care</h4>
-                <p>Comprehensive prenatal and postnatal services.</p>
+    <section class="container text-center py-5">
+        <h6 class="text-uppercase text-primary">What We Offer</h6>
+        <h2 class="fw-bold text-danger">Our Specialized Departments</h2>
+        
+        <div class="row mt-4">
+            <div class="col-md-3 col-6 mb-4">
+                <div class="department-icon">
+                    <i class="fas fa-baby fa-3x"></i>
+                </div>
+                <p class="mt-2 fw-semibold">Maternity Services</p>
             </div>
-            <div class="col-md-4 services">
-                <img src="images/service2.jpeg" class="img-fluid rounded" alt="Orthopedic Services">
-                <h4>Orthopedic Services</h4>
-                <p>Expert care for bone and joint health.</p>
+    
+            <div class="col-md-3 col-6 mb-4">
+                <div class="department-icon">
+                    <i class="fas fa-bone fa-3x"></i>
+                </div>
+                <p class="mt-2 fw-semibold">Orthopaedic Services</p>
             </div>
-            <div class="col-md-4 services">
-                <img src="images/service3.jpeg" class="img-fluid rounded" alt="Physiotherapy">
-                <h4>Physiotherapy</h4>
-                <p>Personalized rehabilitation programs.</p>
+    
+            <div class="col-md-3 col-6 mb-4">
+                <div class="department-icon">
+                    <i class="fas fa-user-md fa-3x"></i>
+                </div>
+                <p class="mt-2 fw-semibold">Laparoscopic Surgery</p>
+            </div>
+    
+            <div class="col-md-3 col-6 mb-4">
+                <div class="department-icon">
+                    <i class="fas fa-running fa-3x"></i>
+                </div>
+                <p class="mt-2 fw-semibold">Physiotherapy</p>
+            </div>
+    
+            <div class="col-md-3 col-6 mb-4">
+                <div class="department-icon">
+                    <i class="fas fa-x-ray fa-3x"></i>
+                </div>
+                <p class="mt-2 fw-semibold">Digital X Ray</p>
+            </div>
+    
+            <div class="col-md-3 col-6 mb-4">
+                <div class="department-icon">
+                    <i class="fas fa-microscope fa-3x"></i>
+                </div>
+                <p class="mt-2 fw-semibold">Pathology</p>
+            </div>
+    
+            <div class="col-md-3 col-6 mb-4">
+                <div class="department-icon">
+                    <i class="fas fa-deaf fa-3x"></i>
+                </div>
+                <p class="mt-2 fw-semibold">ENT</p>
+            </div>
+    
+            <div class="col-md-3 col-6 mb-4">
+                <div class="department-icon">
+                    <i class="fas fa-hospital fa-3x"></i>
+                </div>
+                <p class="mt-2 fw-semibold">Multispeciality Polyclinic & Diagnostic Centre</p>
             </div>
         </div>
     </section>
+    
+    
 
     <!-- Contact Section -->
-    <section class="container text-center py-5 bg-light">
-        <h2>Contact Us</h2>
-        <p>Have questions or need to schedule an appointment? Reach out to us.</p>
-        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    <section class="hero-section">
+        <div class="overlay"></div>
+        <div class="container text-center">
+            <h2 class="fw-bold text-white">Consult with our Maternity and Orthopedic Care Experts</h2>
+            <a href="#" class="btn btn-primary mt-3">Book Appointment</a>
+        </div>
     </section>
+    
 
     <!-- Footer -->
     <footer>

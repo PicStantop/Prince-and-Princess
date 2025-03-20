@@ -2,6 +2,45 @@
 body {
     font-family: Arial, sans-serif;
 }
+.navbar-custom {
+    background-color: #0047ab; /* Modern blue */
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+}
+
+.nav-link {
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+.active{
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #f8d210 !important; /* Gold hover effect */
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #0047ab;
+    font-size: 14px;
+}
+
+.dropdown-item:hover {
+    background-color: #f8d210;
+    color: #000;
+}
+
 
 .carousel-content {
     min-height: 100vh;
@@ -67,7 +106,11 @@ body {
     background: linear-gradient(to right, #f9ecec, #e0d3f5);
     animation: fadeIn 1.5s ease-in-out;
 }
-
+.about-img {
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+}
 #about img {
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
@@ -86,7 +129,7 @@ body {
 /* Breadcrumb Container with Background Image */
 .breadcrumb-container {
     position: relative;
-    background: url('./images/hero-image-3.jpg') center/cover no-repeat; /* Replace with your image */
+    background: url('./images/rb_66314.png') center/cover no-repeat; /* Replace with your image */
     height: 250px; /* Adjust height as needed */
     /* display: flex; */
     align-items: center;
@@ -102,7 +145,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
     background: rgba(2, 16, 25, 0.2); /* Dark overlay */
+}
+.breadcrumb-nav, .hero-title {
+    position: relative;
+    z-index: 2; /* Ensures text is above the overlay */
 }
 
 /* Breadcrumb Content */
@@ -149,9 +197,61 @@ body {
     font-size: 32px;
     font-weight: bold;
 }
-.nav-item{
-    
+.department-icon {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #f8f9fa;
 }
+.department-icon:hover{
+    background-color: #007bff;
+}
+
+.department-icon i {
+    color: #007bff;
+}
+.department-icon i:hover{
+    color:#f8f9fa;
+}
+.hero-section {
+    position: relative;
+    background: url('your-image.jpg') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.btn-primary {
+    background-color: #4c52d7;
+    border: none;
+    padding: 10px 20px;
+}
+
+
 
 /* Contact Section */
 #contact {
