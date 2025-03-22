@@ -129,7 +129,6 @@ body {
 /* Breadcrumb Container with Background Image */
 .breadcrumb-container {
     position: relative;
-    background: url('./images/rb_66314.png') center/cover no-repeat; /* Replace with your image */
     height: 250px; /* Adjust height as needed */
     /* display: flex; */
     align-items: center;
@@ -137,7 +136,21 @@ body {
     text-align: center;
     color: white;
 }
-
+.about-page {
+    background-image: url('images/caregiver-banner.jpg');
+}
+.contact-page {
+    background-image: url('images/caregiver-banner.jpg');
+}
+.service-page {
+    background-image: url('images/caregiver-banner.jpg');
+}
+.adult-service-page {
+    background-image: url('images/caregiver-banner.jpg');
+}
+.team-page {
+    background-image: url('images/caregiver-banner.jpg');
+}
 /* Overlay */
 .breadcrumb-container .overlay {
     position: absolute;
