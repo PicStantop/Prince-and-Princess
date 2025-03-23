@@ -233,7 +233,7 @@ body {
 }
 .hero-section {
     position: relative;
-    background: url('caregiver-banner.jpg') center/cover no-repeat;
+    background: url('images/caregiver-banner.jpg') center/cover no-repeat;
     height: 300px;
     display: flex;
     align-items: center;
