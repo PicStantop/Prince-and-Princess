@@ -137,19 +137,19 @@ body {
     color: white;
 }
 .about-page {
-    background-image: url('images/caregiver-banner.jpg');
+    background-image: url('images/about-banner.jpg');
 }
 .contact-page {
-    background-image: url('images/caregiver-banner.jpg');
+    background-image: url('images/contact-banner.jpg');
 }
 .service-page {
-    background-image: url('images/caregiver-banner.jpg');
+    background-image: url('images/caregiver2-banner.jpg');
 }
 .adult-service-page {
-    background-image: url('images/caregiver-banner.jpg');
+    background-image: url('images/adult-banner.jpg');
 }
 .team-page {
-    background-image: url('images/caregiver-banner.jpg');
+    background-image: url('images/team-banner.jpg');
 }
 /* Overlay */
 .breadcrumb-container .overlay {
